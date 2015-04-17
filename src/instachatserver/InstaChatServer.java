@@ -26,7 +26,7 @@ public class InstaChatServer{
 //            System.setProperty("java.security.policy","file:C:\\Users\\Saurin\\Documents\\NetBeansProjects\\InstaChatServer\\Server.policy");
 //            System.setSecurityManager(new RMISecurityManager());
             LocateRegistry.createRegistry(1099);
-            Registry registry = LocateRegistry.getRegistry();
+            Registry registry = LocateRegistry.getRegistry("10.0.0.29");
             registry.rebind("Login",obj);
             System.out.println("Server: Ready...");
         }
