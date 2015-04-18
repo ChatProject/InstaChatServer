@@ -34,6 +34,7 @@ public class RImp extends UnicastRemoteObject implements InstaChatInterface {
     HashMap<String, Object> map = new HashMap<>();
 
     public RImp() throws RemoteException {
+        super(1099);
         user = new Vector<CallBack>();
         name = new Vector<String>();
     }
